@@ -1,0 +1,158 @@
+* {
+    font-weight: 1000;
+    font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background-color: rgb(204, 219, 65);
+/* background-image: linear-gradient(135deg,#fdfcfb 0%,          #e2d1c3 100%); */
+}
+.all {
+    border-collapse: collapse;
+    font-size: 0.95em;
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    min-width: 400px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.45);
+    text-align: center;
+}
+
+h1{
+    padding-bottom: 3px;
+    scroll-padding-top: 3px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.all th, .all td {
+    padding: 15px 20px;
+}
+.days {
+  border-top: 2px solid black;
+}
+.t {
+  border-left: 2px solid black;
+}
+.s {
+  border-right: 2px solid black;
+}
+.time, .t {
+  border-left: 2px solid black;
+}
+.lastrows {
+  border-right: 2px solid black;
+}
+.lr {
+  border-bottom: 2px solid black;
+}
+tbody tr:nth-of-type(odd){
+    background-color: lightgrey;
+}
+@media (max-width: 500px) {
+    h1 {
+      font-size: 50px;
+      margin-top: 20px;
+      line-height: 40px;
+      text-align: center;
+    }
+    .all {
+        border-collapse: s;
+        font-size: 0.8em;
+        border-radius: 2px 2px 0 0;
+        overflow: hidden;
+        min-width: 400px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+        text-align: center;
+    }
+    .all th, .all td {
+        padding: 10px 15px;
+    }
+}
+
+
+/* If you want to add margins on the end of each column then add:*/
+/* If only to th, if you want to add border to data as well then add ",td" */
+th {
+  border-right: 2px solid black;
+  border-left: 2px solid black; 
+  border-top: 2px solid black; 
+  border-bottom: 2px solid black;
+}
+
+tr {
+  border-right: 2px solid black;
+  border-left: 2px solid black; 
+  border-top: 2px solid black; 
+  border-bottom: 2px solid black;
+}
+
+td {
+  border-right: 2px solid black;
+  border-left: 2px solid black; 
+  border-top: 2px solid black; 
+  border-bottom: 2px solid black;
+}
+
+.background {
+  width: 100px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.line {
+  width: 200px;
+  position: absolute;
+  top: 10px;
+  left: -30px;
+  height: 47px;
+  border-bottom: 3px solid rgb(0, 0, 0);
+  transform: translateY(-20px) translateX(5px) rotate(27deg);
+  position: absolute;
+  z-index: -1;
+}
+
+.background>div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.bottom {
+  position: absolute;
+  bottom: -5px;
+  left: -5px;
+}
+
+.top {
+  position: absolute;
+  top: -10px;
+  right: -15px;
+}
+
+@media screen and (max-width: 1024px) {
+  table {width:100%;}
+  thead {display: none;}
+  tr:nth-of-type(2n) {background-color: inherit;}
+  tr td:first-child {background: #f0f0f0; font-weight:bold;font-size:1.3em;}
+  tbody td {display: block;  text-align:center;}
+  tbody td:before { 
+      content: attr(data-th); 
+      display: block;
+      text-align:center;  
+  }
+
+  .lastrows{
+    border-bottom: hidden;
+  }
+
+  th.time{
+    border: 3px solid black;;
+  }
+
+  h1{
+    display: flex; justify-content: center;
+  }
+}
