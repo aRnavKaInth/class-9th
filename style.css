@@ -101,13 +101,13 @@ td {
 }
 
 .line {
-  width: 200px;
+  width: 210px;
   position: absolute;
   top: 10px;
   left: -30px;
   height: 47px;
   border-bottom: 3px solid rgb(0, 0, 0);
-  transform: translateY(-20px) translateX(5px) rotate(27deg);
+  transform: translateY(-20px) translateX(5px) rotate(29.5deg);
   position: absolute;
   z-index: -1;
 }
@@ -126,10 +126,14 @@ td {
   left: -5px;
 }
 
+span.top {
+    font-size: 23px;
+}    
+
 .top {
   position: absolute;
   top: -10px;
-  right: -15px;
+  right: -17px;
 }
 
 @media screen and (max-width: 1024px) {
