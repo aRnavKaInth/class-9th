@@ -149,7 +149,7 @@ span.top {
   }
 
   .lastrows{
-    border-bottom: 3px solid black;
+    border-bottom: hidden;
   }
 
   th.time{
