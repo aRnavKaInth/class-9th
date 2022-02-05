@@ -155,6 +155,10 @@ span.top {
   th.time{
     border: 3px solid black;
   }
+    
+  .myRow {
+      border-bottom: 3px solid black;
+  }   
 
   h1{
     display: flex; justify-content: center;
