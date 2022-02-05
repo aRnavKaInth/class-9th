@@ -136,7 +136,7 @@ span.top {
   right: -17px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1135px) {
   table {width:100%;}
   thead {display: none;}
   tr:nth-of-type(2n) {background-color: inherit;}
